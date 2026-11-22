@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "question": "Обновился до Pydantic 2, и теперь .dict() и .json() у моделей выдают предупреждение. Чем их заменить?",
+    "expected_sources": [
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 2,
+    "question": "Я собираю данные о пакетах через XML-RPC PyPI. Можно ли на это рассчитывать в долгосрочной перспективе?",
+    "expected_sources": [
+      "pypi-xmlrpc-api.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 3,
+    "question": "Хочу перейти на Pydantic 2, но весь проект переписать за раз не получится. Можно ли в FastAPI мигрировать постепенно и чем автоматизировать правку кода?",
+    "expected_sources": [
+      "release-notes.md",
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "cross_section"
+  },
+  {
+    "id": 4,
+    "question": "Почему перестал работать search(), раньше всё находило?",
+    "expected_sources": [
+      "pypi-xmlrpc-api.txt"
+    ],
+    "expected": "",
+    "type": "ambiguous"
+  },
+  {
+    "id": 5,
+    "question": "Как настроить аутентификацию пользователей через OAuth2 с использованием библиотеки Flask-Login в данном проекте?",
+    "expected_sources": [],
+    "expected": "В базе знаний нет ответа на этот вопрос. Предоставленные документы посвящены исключительно FastAPI, Pydantic и PyPI, и не содержат информации о Flask или Flask-Login.",
+    "type": "out_of_scope"
+  },
+  {
+    "id": 6,
+    "question": "Использую ORJSONResponse, чтобы ускорить ответы, но слышал, что его больше не стоит применять. Это правда?",
+    "expected_sources": [
+      "release-notes.md"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 7,
+    "question": "Обновил FastAPI до последней версии на сервере с Python 3.9, и он перестал ставиться. Почему?",
+    "expected_sources": [
+      "release-notes.md"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 8,
+    "question": "После обновления FastAPI запрос без токена возвращает 401, а раньше возвращал 403. Что изменилось и можно ли вернуть как было?",
+    "expected_sources": [
+      "release-notes.md"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 9,
+    "question": "Я стримлю ответ, а сессия БД из зависимости уже закрыта к моменту отправки данных. Это баг?",
+    "expected_sources": [
+      "release-notes.md"
+    ],
+    "expected": "",
+    "type": "ambiguous"
+  },
+  {
+    "id": 10,
+    "question": "Поставил fastapi через pip install fastapi, а команды fastapi dev и сервера uvicorn нет. Почему так?",
+    "expected_sources": [
+      "release-notes.md"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 11,
+    "question": "Поле, объявленное как Optional[str] без значения по умолчанию, после перехода на Pydantic 2 вдруг стало обязательным. Это нормально?",
+    "expected_sources": [
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 12,
+    "question": "Мой regex с lookahead в валидации строки перестал работать после перехода на вторую версию Pydantic. Что случилось и можно ли вернуть прежний движок?",
+    "expected_sources": [
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 13,
+    "question": "Передаю 10.2 в поле типа int и получаю ошибку, а раньше значение просто принималось. Почему так?",
+    "expected_sources": [
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 14,
+    "question": "Какие методы XML-RPC PyPI ещё официально поддерживаются для зеркалирования, а на что не стоит опираться?",
+    "expected_sources": [
+      "pypi-xmlrpc-api.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 15,
+    "question": "Пытаюсь получить список версий пакета через XML-RPC PyPI, а вызов падает с ошибкой. Чем это заменить?",
+    "expected_sources": [
+      "pypi-xmlrpc-api.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 16,
+    "question": "Как узнать, что на PyPI что-то добавилось или удалилось с моей прошлой проверки, не выкачивая весь список заново?",
+    "expected_sources": [
+      "pypi-xmlrpc-api.txt"
+    ],
+    "expected": "",
+    "type": "direct"
+  },
+  {
+    "id": 17,
+    "question": "После перехода на Pydantic 2 у меня не импортируется BaseSettings. Куда он переехал и что нужно поставить?",
+    "expected_sources": [
+      "release-notes.md",
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "cross_section"
+  },
+  {
+    "id": 18,
+    "question": "Раньше я задавал настройки модели через вложенный класс Config, теперь он считается устаревшим. Как задавать настройки в новой версии?",
+    "expected_sources": [
+      "release-notes.md",
+      "migration-guide.txt"
+    ],
+    "expected": "",
+    "type": "cross_section"
+  }
+]
